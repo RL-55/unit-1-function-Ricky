@@ -2,14 +2,13 @@ import turtle
 from turtle import *
 t = Turtle()
 t.shape('turtle')
-def square(x):
+def triangle(x):
     t.forward(x)
+    t.left(90)
+    t.forward(x+25)
     t.left(90)
     t.forward(x)
     t.left(90)
-    t.forward(x)
-    t.left(90)
-    t.forward(x)
-    t.left(90)
-square(100)
+    t.forward(x+25)
+triangle(100)
 turtle.done()
