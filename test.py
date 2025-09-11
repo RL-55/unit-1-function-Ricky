@@ -1,7 +1,7 @@
 import turtle
 from turtle import *
 t = Turtle()
-t.speed(100)
+t.speed(5000)
 t.shape('turtle')
 def square(x,y):
     for i in range(99):
@@ -10,14 +10,27 @@ def square(x,y):
             t.left(90)
         t.left(y+4)
 def spiralV1(x):
-        for i in range(120):
+        for i in range(240):
             t.forward(x+i)
-            t.left(89)
+            t.left(88)
 def spiralV2(x):
-    for h in range(80):
+    for h in range(100):
          for i in range(4):
-              t.forward(x+h)
+              t.forward(x+h*2)
               t.left(90)
-         t.left(5)
-spiralV2(50)
+         t.left(-5)
+def spiralV3(x):
+    for h in range(100):
+         for i in range(5):
+              t.forward(x+h*2)
+              t.left(144)
+         t.left(-5)
+def Triple(x):
+     t.forward(-x)
+     for h in range(3):
+          for i in range(3):
+            t.forward(x)
+            t.left(120)
+          t.forward(x)
+Triple(50)
 turtle.done()
