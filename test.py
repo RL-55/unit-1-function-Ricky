@@ -33,4 +33,5 @@ def Triple(x):
             t.left(120)
           t.forward(x)
 Triple(50)
+color("blue")
 turtle.done()
