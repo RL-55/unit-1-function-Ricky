@@ -10,14 +10,15 @@ def square(x,y):
             t.left(90)
         t.left(y+4)
 def spiralV1(x):
-        for i in range(240):
+        for i in range(150):
             t.forward(x+i)
             t.left(88)
 def spiralV2(x):
-    for h in range(100):
+    t.left(180)
+    for h in range(60):
          for i in range(4):
-              t.forward(x+h*2)
               t.left(90)
+              t.forward(h*5)
          t.left(-5)
 def spiralV3(x):
     for h in range(100):
@@ -32,6 +33,5 @@ def Triple(x):
             t.forward(x)
             t.left(120)
           t.forward(x)
-Triple(50)
-color("blue")
+spiralV2(50)
 turtle.done()
