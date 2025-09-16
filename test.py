@@ -23,5 +23,5 @@ def spiralV3(x):
               t.forward(x+h*5)
               t.left(144)
          t.left(-5)
-spiralV3(100)
+spiralV2(100)
 turtle.done()
