@@ -9,10 +9,6 @@ def square(x,y):
             t.forward(x)
             t.left(90)
         t.left(y+4)
-def spiralV1(x):
-        for i in range(150):
-            t.forward(x+i)
-            t.left(88)
 def spiralV2(x):
     t.left(180)
     for h in range(60):
@@ -26,22 +22,4 @@ def spiralV3(x):
               t.forward(x+h*2)
               t.left(144)
          t.left(-5)
-def Triple(x):
-     t.forward(-x)
-     for h in range(3):
-          for i in range(3):
-            t.forward(x)
-            t.left(120)
-          t.forward(x)
-def West(x):
-     t.forward(x)
-     for i in range (100):
-          t.forward(x+1)
-          t.left(15)
-     t.left(90)
-     t.forward(x)
-     for h in range(100):
-          t.forward(x/2+1)
-          t.left(15)
-West(50)
 turtle.done()
