@@ -17,9 +17,11 @@ def spiralV2(x):
               t.forward(h*5)
          t.left(-5)
 def spiralV3(x):
-    for h in range(100):
+    t.left(320)
+    for h in range(60):
          for i in range(5):
-              t.forward(x+h*2)
+              t.forward(x+h*5)
               t.left(144)
          t.left(-5)
+spiralV3(100)
 turtle.done()
